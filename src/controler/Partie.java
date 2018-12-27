@@ -11,16 +11,18 @@ public class Partie {
 	private Joueur joueur;
 	private int scoreJ ;
 	private int emplacement;
+	private int n; 
 	
 	
-	public Partie(String joueur,int n){
+	public Partie(String joueur,int n,TerrainManager ts){
 		this.joueur=new Joueur(joueur);
 		this.score=new ScoreFromFiles();
 		this.dep=new DeplacementManager();
-		this.control=new TerrainSpiral();
+		this.control=ts;
+		this.n=n;
 		
 		control.createTerrain(n);
-		this.joueur.setScore(score.getScore());
+		this.joueur.setScore(score.getScore(this.joueur.getNom()));
 		emplacement=0;
 		scoreJ=0;
 	}
@@ -29,7 +31,15 @@ public class Partie {
 		int[] act =control.actionCase(empl);
 		emplacement=dep.deplacer(empl, act[0]);
 		scoreJ+=act[1];
+		if(emplacement>n){
+			fin();
+		}
 	}
+	
+	private void fin(){
+		score.saveScore(joueur.getNom(),scoreJ);
+	}
+	
 	public int getEmplacement() {
 		return emplacement;
 	}

@@ -5,5 +5,5 @@ import java.util.List;
 import controler.TerrainManager;
 
 public abstract class Terrain {
-	private List<ViewCase> parcours;
+	public abstract void createTerrainS(int n);
 }

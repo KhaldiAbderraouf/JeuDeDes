@@ -36,9 +36,16 @@ public class TerrainSpiral extends TerrainManager {
 		int[] res ={0,0};
 		int index[]=getPos(num);
 		res = terrain.get(index[0]).get(index[1]).Action();
-		//----------------------------------------------------------------------------
 		return res;
 	}
+	
+	public String getColor(int num){
+		String res ="Autre";
+		int index[]=getPos(num);
+		res = terrain.get(index[0]).get(index[1]).getCouleur().toString();
+		return res;
+	}
+	
 	private int[] getPos(int num){
 		int res[]={0,0};
 		int cpt1=0,cpt2=2;

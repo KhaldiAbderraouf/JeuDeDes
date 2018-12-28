@@ -33,6 +33,7 @@ public class Partie {
 		scoreJ+=act[1];
 		if(emplacement>n){
 			fin();
+			emplacement=n;
 		}
 	}
 	

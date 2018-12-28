@@ -2,5 +2,5 @@ package view;
 
 public class Down extends State{
 	
-	public void animateDown(int x,int y){}
+	public void animate(int x,int y){}
 }

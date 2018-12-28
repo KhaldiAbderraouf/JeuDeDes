@@ -1,5 +1,10 @@
 package view;
 
 public class Up extends State {
-	public void animateUp(int x,int y){}
+
+	@Override
+	public void animate(int x,int y) {
+		// TODO Auto-generated method stub
+		
+	}
 }

@@ -1,6 +1,6 @@
 package view;
 
 public class Left extends State {
-	public void animateLeft(int x,int y){}
+	public void animate(int x,int y){}
 	
 }

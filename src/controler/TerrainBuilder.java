@@ -7,13 +7,12 @@ import model.*;
 import java.util.Random;
 
 public class TerrainBuilder implements Builder {
-	private int x;
+	
 	private int n;
 	private int[] nbcase = {0,0,0,0,0};
 	private Case[] typeCase={new CaseBonus(),new CaseMalus(),new CaseImage(),new CaseDefinition(),new CaseSaut(),new CaseParcours()};
 	private ArrayList<ArrayList<Case>> ensemble=new ArrayList<ArrayList<Case>>();
-	public TerrainBuilder(int ext,int n){
-		this.x=ext;
+	public TerrainBuilder(int n){
 		this.n=n;
 	}
 	
@@ -47,29 +46,34 @@ public class TerrainBuilder implements Builder {
 	}
 	
 	private Case getCase(int i){
-		if(nbcase[i]<5){
-			nbcase[i]+=1;
-			return typeCase[i];
-		}
-		else{
-			for(int j=0;j<5;j++){
-				if(nbcase[j]<5){
-					nbcase[j]+=1;
-					return typeCase[j];
-				}
+		if(i<5){
+			if(nbcase[i]<5){
+				nbcase[i]+=1;
+				return typeCase[i];
 			}
-			return typeCase[5];
+			else{
+				for(int j=0;j<5;j++){
+					if(nbcase[j]<5){
+						nbcase[j]+=1;
+						return typeCase[j];
+					}
+				}
+				return typeCase[5];
+			}
 		}
+		return typeCase[5];
 	}
 	
 	public ArrayList<ArrayList<Case>> getResult(){
 		CaseDepart d= new CaseDepart();
 		CaseFin f = new CaseFin();
 		ensemble.get(0).add(0,d);
-		ensemble.get(0).remove(ensemble.get(0).size()-1);
-
-		ensemble.get(ensemble.size()-1).add(ensemble.get(ensemble.size()-1).size()-1,f);
-		ensemble.get(ensemble.size()-1).remove(ensemble.get(ensemble.size()-1).size()-1);
+		int i=ensemble.get(0).size()-1;
+		ensemble.get(0).remove(i);
+		i=ensemble.size()-1;
+		int j=ensemble.get(i).size()-1;
+		ensemble.get(i).add(j,f);
+		ensemble.get(i).remove(j+1);
 		
 		return ensemble;
 	}

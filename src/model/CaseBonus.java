@@ -8,7 +8,7 @@ public class CaseBonus extends Case {
 
 	@Override
 	public int[] Action() {
-		int[] res={2,20};
+		int[] res={2,10};
 		return res;
 
 	}

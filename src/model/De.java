@@ -1,7 +1,10 @@
 package model;
 
+import java.util.Random;
+
 public class De {
 	public int lancer(){
-		return 1+(int)Math.random()*5;
+		Random rn = new Random();
+		return 1+rn.nextInt(5);
 	}
 }

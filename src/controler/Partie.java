@@ -7,7 +7,7 @@ public class Partie {
 
 	private TerrainManager control;
 	private DeplacementManager dep;
-	private LoadScore score;
+	private Load score;
 	private Joueur joueur;
 	private int scoreJ ;
 	private int emplacement;
@@ -16,7 +16,7 @@ public class Partie {
 	
 	public Partie(String joueur,int n,TerrainManager ts){
 		this.joueur=new Joueur(joueur);
-		this.score=new ScoreFromFiles();
+		this.score=new LoadFromFiles();
 		this.dep=new DeplacementManager();
 		this.control=ts;
 		this.n=n;

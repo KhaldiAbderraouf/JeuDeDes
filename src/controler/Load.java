@@ -2,7 +2,7 @@ package controler;
 
 import java.util.ArrayList;
 
-public interface LoadScore {
+public interface Load {
 	public ArrayList<Integer> getScore(String name);
 	public void saveScore(String name,int...scores);
 	

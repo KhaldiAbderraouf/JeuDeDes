@@ -3,6 +3,7 @@ package view;
 import java.util.ArrayList;
 
 import controler.TerrainSpiral;
+import javafx.scene.layout.GridPane;
 
 public class VTerrainSpiral extends Terrain {
 	
@@ -33,10 +34,14 @@ public class VTerrainSpiral extends Terrain {
 		int i;
 		for(i=1;i<=10;i++){
 			if(i%2==0){
-				num+=(x-cpt1-cpt2);
-				edges.add(num);
 				if(i%4==0){
+					num+=(x-cpt1-cpt2);
+					edges.add(num-1);
 					cpt1+=2;
+				}
+				else{
+					num+=(x-cpt1-cpt2);
+					edges.add(num);
 				}
 			}
 			else{
@@ -59,12 +64,16 @@ public class VTerrainSpiral extends Terrain {
 		switch(direction){
 			case 0:
 				res[0]=x+1;
+				break;
 			case 1:
 				res[1]=y+1;
+				break;
 			case 2:
 				res[0]=x-1;
+				break;
 			case 3:
 				res[1]=y-1;
+				break;
 		}
 		if(edges.contains(num)){changeDir();}
 		return res;
@@ -79,6 +88,7 @@ public class VTerrainSpiral extends Terrain {
 			res[0]=parcours.get(num).getX();
 			res[1]=parcours.get(num).getY();
 		}
+		blacken(num);
 		return res;
 	}
 	
@@ -91,12 +101,19 @@ public class VTerrainSpiral extends Terrain {
 		}
 		return ligne;
 	}
-	public ArrayList<ViewCase> getAll(){
-		ArrayList<ViewCase> ligne = new ArrayList<ViewCase>();
+	public GridPane getAll(){
+		GridPane g = new GridPane();
+		
+		ViewCase c;
 		int min=n;
 		for(int j=0;j<min;j++){
-			ligne.add(parcours.get(j));
+			c=parcours.get(j);
+			g.add(c,c.getY(),c.getX());
 		}
-		return ligne;
+		return g;
+	}
+	
+	private void blacken(int num){
+		parcours.get(num).black();
 	}
 }

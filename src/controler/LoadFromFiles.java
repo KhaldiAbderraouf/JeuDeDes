@@ -5,21 +5,25 @@ import java.util.List;
 import java.io.*;
 import java.nio.file.Files; 
 
-public class ScoreFromFiles implements LoadScore {
+public class LoadFromFiles implements Load {
 	File file;
 	BufferedReader br;
 	
 	@Override
 	public ArrayList<Integer> getScore(String name) {
-		file = new File("../../files/score.txt");
+		file = new File("src/files/score.txt");
 		ArrayList<Integer> list= new ArrayList<Integer>();
 		try (BufferedReader br = new BufferedReader(new FileReader(file));){
 			String[] score;
 			String scores;
 			while (((scores = br.readLine()) != null)&&(!scores.startsWith(name))){} 
-			score=scores.split(";");
-			for(int i=1;i<score.length;i++){
-				list.add(Integer.parseInt(score[i]));
+			if(scores!=null){
+				score=scores.split(";");
+				for(int i=1;i<score.length;i++){
+					list.add(Integer.parseInt(score[i]));
+				}
+			}else{
+				list.add(0);
 			}
 		} catch (FileNotFoundException e) {
 			try {

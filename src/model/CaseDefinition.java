@@ -1,5 +1,7 @@
 package model;
 
+import view.DefenitionQuestion;
+
 public class CaseDefinition extends CaseQuestion {
 
 	public CaseDefinition() {
@@ -9,7 +11,8 @@ public class CaseDefinition extends CaseQuestion {
 
 	@Override
 	public int[] Action() {
-		int[] res={0,0};
+
+		int [] res=(new DefenitionQuestion().showQuestion());
 		return res;
 
 	}

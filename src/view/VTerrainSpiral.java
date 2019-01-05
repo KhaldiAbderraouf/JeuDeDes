@@ -28,6 +28,15 @@ public class VTerrainSpiral extends Terrain {
 	
 	private void createTerrainS(int n){
 
+		remplirEdges();
+		int[] pos={0,0};
+		parcours.add(new ViewCase(pos[0],pos[1],0,ts.getColor(0)));
+		for(int i=1;i<n;i++){
+			pos=next(pos[0],pos[1],i);
+			parcours.add(new ViewCase(pos[0],pos[1],i,ts.getColor(i)));
+		}
+	}
+	private void remplirEdges(){
 		int num=0,x =getX(n);
 		
 		int cpt1=0,cpt2=2;
@@ -48,12 +57,6 @@ public class VTerrainSpiral extends Terrain {
 				num+=(x-cpt1);
 				edges.add(num);
 			}
-		}
-		int[] pos={0,0};
-		parcours.add(new ViewCase(pos[0],pos[1],0,ts.getColor(0)));
-		for(i=1;i<n;i++){
-			pos=next(pos[0],pos[1],i);
-			parcours.add(new ViewCase(pos[0],pos[1],i,ts.getColor(i)));
 		}
 	}
 	private int getX(int n){
@@ -83,12 +86,15 @@ public class VTerrainSpiral extends Terrain {
 	}
 	
 	public int[] getXY(int num){
-		int[] res= {parcours.get(n-1).getX(),parcours.get(n-1).getY()};
+		int[] res=new int[2];
 		if(num<n){
 			res[0]=parcours.get(num).getX();
 			res[1]=parcours.get(num).getY();
+			blacken(num);
+		}else{
+			res[0]=parcours.get(n-1).getX();
+			res[1]=parcours.get(n-1).getY();
 		}
-		blacken(num);
 		return res;
 	}
 	
@@ -112,8 +118,11 @@ public class VTerrainSpiral extends Terrain {
 		}
 		return g;
 	}
-	
-	private void blacken(int num){
+	public void colorise(int num){
+		parcours.get(num).colorise();
+	}
+	public void blacken(int num){
 		parcours.get(num).black();
 	}
+	
 }

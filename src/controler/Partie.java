@@ -20,20 +20,29 @@ public class Partie {
 		this.dep=new DeplacementManager();
 		this.control=ts;
 		this.n=n;
-		
-		control.createTerrain(n);
 		this.joueur.setScore(score.getScore(this.joueur.getNom()));
 		emplacement=0;
 		scoreJ=0;
 	}
 	public void deplacer(){
-		int empl=dep.deplacer(emplacement);
-		int[] act =control.actionCase(empl);
-		emplacement=dep.deplacer(empl, act[0]);
-		scoreJ+=act[1];
-		if(emplacement>n){
-			fin();
-			emplacement=n;
+		//int empl=dep.deplacer(emplacement);
+		int empl=emplacement+1;
+		int[] act={0,0};
+		while(empl!=emplacement){
+			System.out.println(empl);
+			try{ 
+				act =control.actionCase(empl);
+				System.out.println(control.getColor(empl));
+			}catch(IndexOutOfBoundsException e){
+				act=control.actionCase(n-1);
+			}
+			emplacement=dep.deplacer(empl, act[0]);
+			scoreJ+=act[1];
+			if(emplacement>n){
+				fin();
+				emplacement=n;
+			}
+			empl=emplacement;
 		}
 	}
 	

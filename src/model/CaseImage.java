@@ -12,7 +12,6 @@ public class CaseImage extends CaseQuestion {
 
 	@Override
 	public int[] Action() {
-		
 		int [] res=(new ImageQuestion().showQuestion());
 		return res;
 

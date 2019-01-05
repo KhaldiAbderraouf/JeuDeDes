@@ -13,9 +13,8 @@ public class ViewCase extends Label {
 		this.x=x;
 		this.y=y;
 		this.couleur=couleur;
-		this.setStyle("-fx-color:black; -fx-background-color:"+getColor()+";-fx-padding-left: 20px;");
+		colorise();
 		this.setMinSize(50, 50);
-		
 	}
 	
 	public int getX(){
@@ -46,7 +45,9 @@ public class ViewCase extends Label {
 			return "brown";
 		}
 	}
-	
+	public void colorise(){
+		this.setStyle("-fx-color:black; -fx-background-color:"+getColor()+";-fx-padding-left: 20px;");
+	}
 	public void black(){
 		this.setStyle("-fx-color:white; -fx-background-color:black");
 	}

@@ -11,7 +11,6 @@ public class CaseDefinition extends CaseQuestion {
 
 	@Override
 	public int[] Action() {
-
 		int [] res=(new DefenitionQuestion().showQuestion());
 		return res;
 

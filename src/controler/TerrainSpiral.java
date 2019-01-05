@@ -47,7 +47,7 @@ public class TerrainSpiral extends TerrainManager {
 		return res;
 	}
 	
-	private int[] getPos(int num){
+	public int[] getPos(int num){
 		int res[]={0,0};
 		int cpt1=0,cpt2=2;
 		for(int i=1;i<=10;i++){

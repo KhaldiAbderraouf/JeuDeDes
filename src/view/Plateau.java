@@ -29,6 +29,7 @@ public class Plateau extends BorderPane {
 		partie.deplacer();
 		int empl=partie.getEmplacement();
 		int[] xy=terrain.getXY(empl);
+		
 		menu.setScore(score());
 		menu.setEmpl(empl);
 		pion.deplacer(xy[0],xy[1]);

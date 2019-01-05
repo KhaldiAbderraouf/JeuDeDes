@@ -40,12 +40,20 @@ public class LoadFromFiles implements Load {
 
 	@Override
 	public void saveScore(String name, int... score) {
-		file = new File("../../files/score.txt");
-		int i=0;
+		file = new File("src/files/score.txt");
+		int k=0,i=0;
 		
 		try(BufferedReader br = new BufferedReader(new FileReader(file));){
 			String scores;
-			while (((scores = br.readLine()) != null)&&(!scores.startsWith(name))){i++;} 
+			while (((scores = br.readLine()) != null)&&(!scores.startsWith(name))){
+				if(!scores.startsWith(name)){
+					k++;
+				}
+				i++;
+			}
+			if(k!=i){
+				i=k;
+			}
 		}catch (FileNotFoundException e){
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -59,7 +67,11 @@ public class LoadFromFiles implements Load {
 			}
 			
 			List<String> lines = Files.readAllLines(file.toPath());
-			lines.set(i,fileContent);
+			if(i!=0){
+				lines.set(i,fileContent);
+			}else{
+				lines.add(0,fileContent);
+			}
 			Files.write(file.toPath(), lines);
 		} catch (IOException e) {
 			e.printStackTrace();

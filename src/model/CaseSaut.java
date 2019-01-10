@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Random;
+
 public class CaseSaut extends Case {
 
 	public CaseSaut() {
@@ -9,7 +11,8 @@ public class CaseSaut extends Case {
 
 	@Override
 	public int[] Action() {
-		int[] res={4,0};
+		Random rn = new Random();
+		int[] res={rn.nextInt(20),0};
 		return res;
 
 	}

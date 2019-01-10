@@ -3,8 +3,11 @@ package view;
 import controler.Partie;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 
 
 public class Plateau extends BorderPane {
@@ -22,7 +25,11 @@ public class Plateau extends BorderPane {
 		menu=new MenuPlateau(joueur);
 		this.setLeft(menu);
 		setActions();
-		this.setCenter(terrain.getAll());
+		Pane stack = new Pane();
+		stack.getChildren().addAll(terrain.getAll(),pion.getLabel());
+		pion.getLabel().toFront();
+		this.setCenter(stack);
+		
 	}
 	
 	public void deplacer(){
@@ -32,10 +39,14 @@ public class Plateau extends BorderPane {
 		
 		menu.setScore(score());
 		menu.setEmpl(empl);
-		pion.deplacer(xy[0],xy[1]);
-		
-		if(empl==n){
-			fin();
+		if(empl<n){
+			pion.deplacer(pion.getX(),pion.getY(),xy[1],xy[0]);
+		}else{
+			xy=terrain.getXY(n-1);
+			pion.deplacer(pion.getX(),pion.getY(),xy[1],xy[0]);
+			if(empl==n){
+				fin();
+			}
 		}
 	}
 	public void fin(){
@@ -51,5 +62,8 @@ public class Plateau extends BorderPane {
 				  deplacer();
 			  }
 		  });
+	}
+	public Button getExit(){
+		return menu.getExit();
 	}
 }

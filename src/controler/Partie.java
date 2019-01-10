@@ -1,6 +1,7 @@
 package controler;
 
-import model.De;
+import java.util.ArrayList;
+
 import model.Joueur;
 
 public class Partie {
@@ -25,14 +26,15 @@ public class Partie {
 		scoreJ=0;
 	}
 	public void deplacer(){
-		//int empl=dep.deplacer(emplacement);
-		int empl=emplacement+1;
+		int empl=dep.deplacer(emplacement);
+		//int empl=emplacement+1;
 		int[] act={0,0};
-		while(empl!=emplacement){
-			System.out.println(empl);
+		int inter=empl;
+		while(inter!=emplacement){
+			inter=empl;
+			emplacement=empl;
 			try{ 
 				act =control.actionCase(empl);
-				System.out.println(control.getColor(empl));
 			}catch(IndexOutOfBoundsException e){
 				act=control.actionCase(n-1);
 			}
@@ -44,9 +46,11 @@ public class Partie {
 			}
 			empl=emplacement;
 		}
+		
 	}
 	
 	private void fin(){
+		
 		score.saveScore(joueur.getNom(),scoreJ);
 	}
 	

@@ -78,9 +78,4 @@ public class TerrainBuilder implements Builder {
 		return ensemble;
 	}
 
-	@Override
-	public Iterator getIterator() {
-		// TODO Auto-generated method stub
-		return new LLIterator();
-	}
 }

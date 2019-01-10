@@ -1,572 +1,670 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <interface id="1" language="java" name="controler.Builder" project="Jeu De Des" 
-    file="/Jeu De Des/src/controler/Builder.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="946" y="968"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <class id="2" language="java" name="view.State" project="Jeu De Des" file="/Jeu De Des/src/view/State.java" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <enumeration id="1" language="java" name="model.Couleur" project="jeu pdc" file="/jeu pdc/src/model/Couleur.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="316" y="-28"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="model.CaseImage" project="Jeu De Des" file="/Jeu De Des/src/model/CaseImage.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1812" y="1095"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <interface id="4" language="java" name="controler.Iimages" project="Jeu De Des" 
-    file="/Jeu De Des/src/controler/Iimages.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="881" y="-12"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <class id="5" language="java" name="view.Left" project="Jeu De Des" file="/Jeu De Des/src/view/Left.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="283" y="117"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="6" language="java" name="controler.Partie" project="Jeu De Des" 
-    file="/Jeu De Des/src/controler/Partie.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="642" y="417"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="7" language="java" name="view.Pion" project="Jeu De Des" file="/Jeu De Des/src/view/Pion.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="583" y="-22"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="8" language="java" name="view.Plateau" project="Jeu De Des" file="/Jeu De Des/src/view/Plateau.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="601" y="152"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="9" language="java" name="model.CaseDefinition" project="Jeu De Des" 
-    file="/Jeu De Des/src/model/CaseDefinition.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1990" y="1105"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="10" language="java" name="controler.MenuManager" project="Jeu De Des" 
-    file="/Jeu De Des/src/controler/MenuManager.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="825" y="354"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="11" language="java" name="controler.TerrainSpiral" project="Jeu De Des" 
-    file="/Jeu De Des/src/controler/TerrainSpiral.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="611" y="938"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="12" language="java" name="model.CaseQuestion" project="Jeu De Des" 
-    file="/Jeu De Des/src/model/CaseQuestion.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1892" y="983"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <interface id="13" language="java" name="controler.Iterator" project="Jeu De Des" 
-    file="/Jeu De Des/src/controler/Iterator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1539" y="363"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <class id="14" language="java" name="model.CaseMalus" project="Jeu De Des" file="/Jeu De Des/src/model/CaseMalus.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1589" y="719"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="15" language="java" name="view.Up" project="Jeu De Des" file="/Jeu De Des/src/view/Up.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="423" y="102"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="16" language="java" name="view.Right" project="Jeu De Des" file="/Jeu De Des/src/view/Right.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="125" y="105"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="17" language="java" name="view.VTerrainSpiral" project="Jeu De Des" 
-    file="/Jeu De Des/src/view/VTerrainSpiral.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="375" y="664"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="18" language="java" name="controler.DeplacementManager" project="Jeu De Des" 
-    file="/Jeu De Des/src/controler/DeplacementManager.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="991" y="646"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="19" language="java" name="view.MenuPlateau" project="Jeu De Des" 
-    file="/Jeu De Des/src/view/MenuPlateau.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="230" y="354"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="20" language="java" name="model.CaseSaut" project="Jeu De Des" file="/Jeu De Des/src/model/CaseSaut.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1724" y="705"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="21" language="java" name="view.Terrain" project="Jeu De Des" file="/Jeu De Des/src/view/Terrain.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="415" y="363"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="22" language="java" name="model.CaseDepart" project="Jeu De Des" 
-    file="/Jeu De Des/src/model/CaseDepart.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1852" y="711"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="23" language="java" name="model.Joueur" project="Jeu De Des" file="/Jeu De Des/src/model/Joueur.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="596" y="664"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="24" language="java" name="model.CaseParcours" project="Jeu De Des" 
-    file="/Jeu De Des/src/model/CaseParcours.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1451" y="721"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="25" language="java" name="model.Case" project="Jeu De Des" file="/Jeu De Des/src/model/Case.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1672" y="910"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="26" language="java" name="view.Down" project="Jeu De Des" file="/Jeu De Des/src/view/Down.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="97" y="-19"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="27" language="java" name="controler.ImagesFromFiles" project="Jeu De Des" 
-    file="/Jeu De Des/src/controler/ImagesFromFiles.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1192" y="3"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <enumeration id="28" language="java" name="model.Couleur" project="Jeu De Des" 
-    file="/Jeu De Des/src/model/Couleur.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1992" y="609"/>    
+    <position height="-1" width="-1" x="572" y="2080"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <interface id="29" language="java" name="controler.LoadScore" project="Jeu De Des" 
-    file="/Jeu De Des/src/controler/LoadScore.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1186" y="498"/>    
+  <class id="2" language="java" name="view.ViewCase" project="jeu pdc" file="/jeu pdc/src/view/ViewCase.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="155" x="2100" y="1331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="view.MenuPrincipale" project="jeu pdc" 
+    file="/jeu pdc/src/view/MenuPrincipale.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="138" x="1174" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="4" language="java" name="controler.Load" project="jeu pdc" file="/jeu pdc/src/controler/Load.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1758" y="1030"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="30" language="java" name="view.Menu.SideBar" project="Jeu De Des" file="/Jeu De Des/src/view/Menu.java" 
+  <class id="5" language="java" name="model.Case" project="jeu pdc" file="/jeu pdc/src/model/Case.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="735" y="1671"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="model.CaseSaut" project="jeu pdc" file="/jeu pdc/src/model/CaseSaut.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="992" y="372"/>    
+    <position height="-1" width="-1" x="894" y="2017"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="31" language="java" name="view.ViewCase" project="Jeu De Des" file="/Jeu De Des/src/view/ViewCase.java" 
+  <class id="7" language="java" name="view.VTerrainSpiral" project="jeu pdc" 
+    file="/jeu pdc/src/view/VTerrainSpiral.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="213" x="1930" y="976"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="controler.DeplacementManager" project="jeu pdc" 
+    file="/jeu pdc/src/controler/DeplacementManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="149" x="1296" y="976"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="model.CaseParcours" project="jeu pdc" file="/jeu pdc/src/model/CaseParcours.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="366" y="929"/>    
+    <position height="-1" width="-1" x="1288" y="2017"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="32" language="java" name="view.Menu" project="Jeu De Des" file="/Jeu De Des/src/view/Menu.java" 
+  <class id="10" language="java" name="controler.TerrainSpiral" project="jeu pdc" 
+    file="/jeu pdc/src/controler/TerrainSpiral.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="201" x="1859" y="1331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="view.ImageQuestion" project="jeu pdc" file="/jeu pdc/src/view/ImageQuestion.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="902" y="161"/>    
+    <position height="99" width="125" x="434" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="33" language="java" name="model.De" project="Jeu De Des" file="/Jeu De Des/src/model/De.java" 
+  <class id="12" language="java" name="controler.MenuManager" project="jeu pdc" 
+    file="/jeu pdc/src/controler/MenuManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="105" x="580" y="374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="model.CaseDefinition" project="jeu pdc" 
+    file="/jeu pdc/src/model/CaseDefinition.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="789" y="2372"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="view.DefenitionQuestion" project="jeu pdc" 
+    file="/jeu pdc/src/view/DefenitionQuestion.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="132" x="262" y="621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="controler.LoadFromFiles" project="jeu pdc" 
+    file="/jeu pdc/src/controler/LoadFromFiles.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="199" x="1417" y="621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="model.CaseImage" project="jeu pdc" file="/jeu pdc/src/model/CaseImage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1217" y="660"/>    
+    <position height="-1" width="-1" x="652" y="2372"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="34" language="java" name="model.CaseBonus" project="Jeu De Des" file="/Jeu De Des/src/model/CaseBonus.java" 
+  <class id="17" language="java" name="model.CaseBonus" project="jeu pdc" file="/jeu pdc/src/model/CaseBonus.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1619" y="1094"/>    
+    <position height="-1" width="-1" x="1150" y="2017"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="35" language="java" name="controler.ScoreFromFiles" project="Jeu De Des" 
-    file="/Jeu De Des/src/controler/ScoreFromFiles.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1185" y="372"/>    
+  <class id="18" language="java" name="controler.ImagesFromFiles" project="jeu pdc" 
+    file="/jeu pdc/src/controler/ImagesFromFiles.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="199" x="599" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="36" language="java" name="model.CaseFin" project="Jeu De Des" file="/Jeu De Des/src/model/CaseFin.java" 
+  <class id="19" language="java" name="view.Plateau" project="jeu pdc" file="/jeu pdc/src/view/Plateau.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="2008" y="853"/>    
+    <position height="207" width="109" x="1174" y="374"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="37" language="java" name="controler.TerrainManager" project="Jeu De Des" 
-    file="/Jeu De Des/src/controler/TerrainManager.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="804" y="637"/>    
+  <class id="20" language="java" name="model.De" project="jeu pdc" file="/jeu pdc/src/model/De.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="87" x="1311" y="1331"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="38" language="java" name="controler.LLIterator" project="Jeu De Des" 
-    file="/Jeu De Des/src/controler/LLIterator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1539" y="143"/>    
+  <interface id="21" language="java" name="controler.Definition" project="jeu pdc" 
+    file="/jeu pdc/src/controler/Definition.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="181" x="152" y="976"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="22" language="java" name="view.Terrain" project="jeu pdc" file="/jeu pdc/src/view/Terrain.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="213" x="1656" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="39" language="java" name="controler.TerrainBuilder" project="Jeu De Des" 
-    file="/Jeu De Des/src/controler/TerrainBuilder.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1382" y="944"/>    
+  <class id="23" language="java" name="model.CaseFin" project="jeu pdc" file="/jeu pdc/src/model/CaseFin.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1021" y="2017"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="40">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="41" name="state"/>      
-      <multiplicity id="42" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="43">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <association id="44">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="45" name="terrain"/>      
-      <multiplicity id="46" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="21" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="47">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="12"/>  
-  </generalization>  
-  <realization id="48">    
-    <end type="SOURCE" refId="27"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="49">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="50" name="score"/>      
-      <multiplicity id="51" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="29" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="52">    
-    <end type="SOURCE" refId="24"/>    
-    <end type="TARGET" refId="25"/>  
-  </generalization>  
-  <association id="53">    
-    <end type="SOURCE" refId="25" navigable="false">      
-      <attribute id="54" name="couleur"/>      
-      <multiplicity id="55" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="28" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="56">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="57" name="menu"/>      
-      <multiplicity id="58" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="19" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="59">    
-    <end type="SOURCE" refId="37" navigable="false">      
-      <attribute id="60" name="machine"/>      
-      <multiplicity id="61" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="62">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="63" name="control"/>      
-      <multiplicity id="64" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="37" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <nesting id="65">    
-    <end type="SOURCE" refId="32"/>    
-    <end type="TARGET" refId="30"/>  
-  </nesting>  
-  <generalization id="66">    
-    <end type="SOURCE" refId="20"/>    
-    <end type="TARGET" refId="25"/>  
-  </generalization>  
-  <association id="67">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="68" name="joueur"/>      
-      <multiplicity id="69" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="23" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="70">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="25"/>  
-  </generalization>  
-  <association id="71">    
-    <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="72" name="parcours"/>      
-      <multiplicity id="73" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="31" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="74">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="37"/>  
-  </generalization>  
-  <association id="75">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="76" name="partie"/>      
-      <multiplicity id="77" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="78">    
-    <end type="SOURCE" refId="36"/>    
-    <end type="TARGET" refId="25"/>  
-  </generalization>  
-  <generalization id="79">    
-    <end type="SOURCE" refId="26"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <association id="80">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="81" name="dep"/>      
-      <multiplicity id="82" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="18" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="83">    
-    <end type="SOURCE" refId="38"/>    
-    <end type="TARGET" refId="13"/>  
-  </realization>  
-  <association id="84">    
-    <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="85" name="ts"/>      
-      <multiplicity id="86" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="87">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="88" name="de"/>      
-      <multiplicity id="89" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="33" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="90">    
-    <end type="SOURCE" refId="35"/>    
-    <end type="TARGET" refId="29"/>  
-  </realization>  
-  <association id="91">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="92" name="pion"/>      
-      <multiplicity id="93" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="94">    
-    <end type="SOURCE" refId="39"/>    
-    <end type="TARGET" refId="1"/>  
-  </realization>  
-  <association id="95">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="96" name="Iimgs"/>      
-      <multiplicity id="97" minimum="0" maximum="1"/>    
+  <class id="24" language="java" name="view.Right" project="jeu pdc" file="/jeu pdc/src/view/Right.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="216" x="799" y="1331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="view.Down" project="jeu pdc" file="/jeu pdc/src/view/Down.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="216" x="543" y="1331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="model.Joueur" project="jeu pdc" file="/jeu pdc/src/model/Joueur.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="191" x="1065" y="976"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="controler.Partie" project="jeu pdc" file="/jeu pdc/src/controler/Partie.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="181" x="1196" y="621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="model.CaseMalus" project="jeu pdc" file="/jeu pdc/src/model/CaseMalus.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="429" y="2017"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="view.Up" project="jeu pdc" file="/jeu pdc/src/view/Up.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="216" x="1055" y="1331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="view.State" project="jeu pdc" file="/jeu pdc/src/view/State.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="226" x="799" y="976"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="controler.TerrainBuilder" project="jeu pdc" 
+    file="/jeu pdc/src/controler/TerrainBuilder.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1516" y="1635"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="view.Left" project="jeu pdc" file="/jeu pdc/src/view/Left.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="216" x="287" y="1331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="view.QuestionView" project="jeu pdc" file="/jeu pdc/src/view/QuestionView.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="125" x="348" y="374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="view.MenuPlateau" project="jeu pdc" file="/jeu pdc/src/view/MenuPlateau.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="126" x="838" y="621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="model.CaseQuestion" project="jeu pdc" file="/jeu pdc/src/model/CaseQuestion.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="741" y="2008"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="view.Pion" project="jeu pdc" file="/jeu pdc/src/view/Pion.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="225" width="152" x="1004" y="621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="controler.DefinitionFromFiles" project="jeu pdc" 
+    file="/jeu pdc/src/controler/DefinitionFromFiles.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="181" x="41" y="621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="38" language="java" name="controler.Iimages" project="jeu pdc" 
+    file="/jeu pdc/src/controler/Iimages.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="199" x="560" y="976"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="39" language="java" name="controler.TerrainManager" project="jeu pdc" 
+    file="/jeu pdc/src/controler/TerrainManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="145" x="1485" y="976"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="model.CaseDepart" project="jeu pdc" file="/jeu pdc/src/model/CaseDepart.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="300" y="2017"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="41" language="java" name="controler.Builder" project="jeu pdc" 
+    file="/jeu pdc/src/controler/Builder.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="221" x="1547" y="1386"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <association id="42">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="43" name="score">        
+        <position height="0" width="0" x="-11" y="5"/>      
+      </attribute>      
+      <multiplicity id="44" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-11" y="5"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="98">    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="2"/>  
+  <generalization id="45">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="35"/>  
   </generalization>  
-  <generalization id="99">    
+  <association id="46">    
+    <end type="SOURCE" refId="36" navigable="false">      
+      <attribute id="47" name="state">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="48" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="49">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="50" name="partie">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="51" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="52">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="30"/>  
+  </generalization>  
+  <realization id="53">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="41"/>  
+  </realization>  
+  <generalization id="54">    
     <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="12"/>  
+    <end type="TARGET" refId="5"/>  
   </generalization>  
-  <association id="100">    
-    <end type="SOURCE" refId="32" navigable="false">      
-      <attribute id="101" name="menuman"/>      
-      <multiplicity id="102" minimum="0" maximum="1"/>    
+  <association id="55">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="56" name="control">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="57" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="58">    
+    <end type="SOURCE" refId="39" navigable="false">      
+      <attribute id="59" name="machine">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="60" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="41" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="61">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="62" name="couleur">        
+        <position height="0" width="0" x="-1928" y="992"/>      
+      </attribute>      
+      <multiplicity id="63" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-1928" y="992"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="64">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <association id="65">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="66" name="plateau">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="67" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="68">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="39"/>  
+  </generalization>  
+  <generalization id="69">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <generalization id="70">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <association id="71">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="72" name="de">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="73" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="74">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="41"/>  
+  </dependency>  
+  <generalization id="75">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <association id="76">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="77" name="menu">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="78" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="79">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="80" name="joueur">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="81" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="82">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="83" name="def">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="84" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="85">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="30"/>  
+  </generalization>  
+  <dependency id="86">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="87">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <generalization id="88">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <generalization id="89">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <generalization id="90">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <association id="91">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="92" name="dep">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="93" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="94">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="95" name="pion">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="96" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="36" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="97">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="98" name="typeCase">        
+        <position height="0" width="0" x="-1928" y="992"/>      
+      </attribute>      
+      <multiplicity id="99" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-1928" y="992"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="100">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <association id="101">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="102" name="ts">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="103" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="103">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="25"/>  
+  <realization id="104">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <generalization id="105">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="30"/>  
   </generalization>  
-  <association id="104">    
-    <end type="SOURCE" refId="39" navigable="false">      
-      <attribute id="105" name="typeCase"/>      
-      <multiplicity id="106" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="25" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
+  <realization id="106">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
   <generalization id="107">    
     <end type="SOURCE" refId="16"/>    
-    <end type="TARGET" refId="2"/>  
+    <end type="TARGET" refId="35"/>  
   </generalization>  
-  <generalization id="108">    
-    <end type="SOURCE" refId="34"/>    
-    <end type="TARGET" refId="25"/>  
-  </generalization>  
-  <generalization id="109">    
-    <end type="SOURCE" refId="22"/>    
-    <end type="TARGET" refId="25"/>  
-  </generalization>  
-  <generalization id="110">    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="21"/>  
+  <association id="108">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="109" name="terrain">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="110" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="111">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="112" name="parcours">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="113" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="114">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="38"/>  
+  </realization>  
+  <generalization id="115">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="30"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

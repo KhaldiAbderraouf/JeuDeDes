@@ -90,7 +90,6 @@ public class VTerrainSpiral extends Terrain {
 		if(num<n){
 			res[0]=parcours.get(num).getX();
 			res[1]=parcours.get(num).getY();
-			blacken(num);
 		}else{
 			res[0]=parcours.get(n-1).getX();
 			res[1]=parcours.get(n-1).getY();
@@ -120,9 +119,6 @@ public class VTerrainSpiral extends Terrain {
 	}
 	public void colorise(int num){
 		parcours.get(num).colorise();
-	}
-	public void blacken(int num){
-		parcours.get(num).black();
 	}
 	
 }

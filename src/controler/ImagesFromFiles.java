@@ -14,8 +14,7 @@ public class ImagesFromFiles implements Iimages {
 	public ArrayList<Image> getImages(String pion) {
 		ArrayList<Image> images = new ArrayList<Image>();
 		
-		File file = new File("src/Images/pion");  
-		String p=file.getAbsolutePath();
+		File file = new File("src/Images/img"); 
 		File[] files = file.listFiles();  
 		for (File f:files)  
 		{  
@@ -42,17 +41,21 @@ public class ImagesFromFiles implements Iimages {
 		
 		Random rn = new Random();
 		int cpt=0;
+		ArrayList<Integer> res = new ArrayList<Integer>();
 		
-		File file = new File("../../Images/questions");  
-		File[] files = file.listFiles();  
-		for (File f:files)  
-		{  
-			if(rn.nextInt(100)>50){	 
-				images.add(new Image(f.getAbsolutePath()));
-				cpt++;
+		File file = new File("src/Images/img");
+		File[] files = file.listFiles();
+		int r;
+		cpt= files.length;
+		for(int i =0;i<4;i++){
+			r=rn.nextInt(cpt);
+			while(res.contains(r)){
+				r=rn.nextInt(cpt);
 			}
-			if(cpt>3) break;
-		}
+			res.add(r);
+			images.add(new Image("file:\\"+files[r].getAbsolutePath(),200,200,false,false));
+			
+		}	
 		return images;
 	}
 

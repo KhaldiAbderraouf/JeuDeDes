@@ -9,7 +9,7 @@ public class CaseMalus extends Case {
 
 	@Override
 	public int[] Action() {
-		int[] res={0,-10};
+		int[] res={-2,-10};
 		return res;
 
 	}

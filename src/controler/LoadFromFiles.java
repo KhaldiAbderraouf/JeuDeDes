@@ -39,38 +39,33 @@ public class LoadFromFiles implements Load {
 	}
 
 	@Override
-	public void saveScore(String name, int... score) {
+	public void saveScore(String name,int s) {
+		ArrayList<Integer> score = getScore(name);
+		score.add(s);
 		file = new File("src/files/score.txt");
 		int k=0,i=0;
 		
-		try(BufferedReader br = new BufferedReader(new FileReader(file));){
-			String scores;
-			while (((scores = br.readLine()) != null)&&(!scores.startsWith(name))){
-				if(!scores.startsWith(name)){
-					k++;
-				}
-				i++;
-			}
-			if(k!=i){
-				i=k;
-			}
-		}catch (FileNotFoundException e){
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		
 		
 		try{
 			String fileContent = name;
-			for(int j=0;j<score.length;j++){
-				fileContent=fileContent+";"+score[j];
+			for(int j=0;j<score.size();j++){
+				fileContent=fileContent+";"+score.get(j);
 			}
 			
 			List<String> lines = Files.readAllLines(file.toPath());
-			if(i!=0){
+			
+			for(i=0;i<lines.size();i++){
+				if(lines.get(i).contains(name)){
+					k=1;
+					break;
+				}
+			}
+			
+			if(k!=0){
 				lines.set(i,fileContent);
 			}else{
-				lines.add(0,fileContent);
+				lines.set(0,fileContent);
 			}
 			Files.write(file.toPath(), lines);
 		} catch (IOException e) {

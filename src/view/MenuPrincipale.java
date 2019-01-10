@@ -1,10 +1,13 @@
 package view;
 
+import java.util.Optional;
+
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextInputDialog;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -40,10 +43,13 @@ public class MenuPrincipale extends Application {
 		  
 		  New.setOnAction(new EventHandler<ActionEvent>() {
 			  @Override public void handle(ActionEvent actionEvent) {
-				  addPlateau("guest");
+				  TextInputDialog dialog = new TextInputDialog("guest");
+				  dialog.setTitle("Nom de l'utilisateur");
+				  dialog.setHeaderText(null);
+				  Optional<String> result = dialog.showAndWait();
+				  addPlateau(result.get());
 			  }
-		  });
-		  
+		  });  
 		  
 		  Menu=new VBox(10);
 		  Menu.getChildren().addAll(New,Load,Scores,Exit);
@@ -56,6 +62,11 @@ public class MenuPrincipale extends Application {
 		  plateau = new Plateau(j);
 		  Playout.getChildren().clear();
 		  Playout.getChildren().add(plateau);
+		  plateau.getExit().setOnAction(new EventHandler<ActionEvent>() {
+			  @Override public void handle(ActionEvent actionEvent) {
+				  addMenu("guest");
+			  }
+		  });
 	  }
 	  public void addMenu(String j){
 		  

@@ -1,0 +1,5 @@
+aristocrat;A government dominated by a privileged minority class, the privileged class in a society, the nobility those people considered the best in there sphere;
+fatalism;Belief that all events are predetermined by fate and therefore inevitable, acceptance of this doctrine;
+religion;a belief in god or gods, a system of worship and faith, a formalized expression of belief;
+edition;a whole number of copies of a book, printed at a time, the form of a particular publication;
+secretary;a person employed to deal with correspondence, filling telephone calls of another or of an association;
